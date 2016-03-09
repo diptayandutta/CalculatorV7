@@ -189,7 +189,7 @@ public class MainActivity extends Activity {
 
     private boolean endsWithOperator()
     {
-        if (value.endsWith(ADD) || value.endsWith(SUB) || value.endsWith(MUL) || value.endsWith(DIV)) return true;
+        if (value.endsWith(ADD) || value.endsWith(SUB) || value.endsWith(MUL) || value.endsWith(DIV) || value.endsWith(PER)) return true;
         else return false;
     }
 
@@ -243,6 +243,7 @@ public class MainActivity extends Activity {
     private void resetCalculator()
     {
         value = "";
+
         operators.clear();
         lastNumeric=false;
         lastDot=false;
